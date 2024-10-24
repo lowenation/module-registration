@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student's Registration form</title>
+    <title>Module Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Registration </h1>
-    <form>
-      <p>First name</p>
-      <p> <input id="first name" type="text" name="firstname" required autofocus></p>
-      <p>Last name</p>
-      <p> <input id="Last name" type="text" name="lastname" required autofocus></p>
-      <p>Student ID</p>
-      <p> G<input id="student id" type="text" name="student id" required autofocus></p>
-      <p>Email address</p>
-      <p> <input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required autofocus></p>
+<div class="body">
+    <div>
+        <h1>Module Registration Form </h1>
+    </div>
 
+
+    <form>
+        <div class="student info">
+      <p>First name:</p>
+      <p> <input id="first name" type="text" name="firstname" required autofocus class="input-box"></p>
+      <p>Last name:</p>
+      <p> <input id="Last name" type="text" name="lastname" required autofocus class="input-box"></p>
+      <p>Student ID:</p>
+      <p> <input id="student id" type="text" name="student id" required autofocus class="input-box"></p>
+      <p>Email address:</p>
+      <p> <input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required autofocus
+                 class="input-box"></p>
+        </div>
 
       <p> <b>Register to modules</b> </p>
       <p> <input id="CO1111" type="checkbox" name="checkbox" required> C01111 - The Computing Challenges </p>
@@ -25,11 +33,14 @@
       <p> <input id="CO1508" type="checkbox" name="checkbox" required> CO1508 - Computer Systems and Security</p>
       <p> <input id="CO1706" type="checkbox" name="checkbox" required> CO1706 - Interactive Application </p>
 
-      <p> <b>Preferred Pathway</b> </p>
-      <input id="Software Engineering"type="radio" name="radiobutton" required> Software Engineering
-      <input id="Games Development" type="radio" name="radiobutton" required> Games Development
-      <input id="Networking" type="radio" name="radiobutton" required> Networking
-      <input id="Not Sure yet" type="radio" name="radiobutton" required> Not sure yet
+      <div class="pathway">
+        <p><b>Preferred Pathway</b></p>
+        <input id="Software Engineering" type="radio" name="radiobutton" required> Software Engineering
+        <input id="Games Development" type="radio" name="radiobutton" required> Games Development
+        <input id="Networking" type="radio" name="radiobutton" required> Networking
+        <input id="Not Sure yet" type="radio" name="radiobutton" required> Not sure yet
+      </div>
+
       <p></p>
 
       <p> <b>Gender</b> </p>
@@ -42,15 +53,18 @@
 
       <p><b>Press 'submit' to submit your form or 'rest' to reset it</b></p>
       <input type="submit" value="Submit">
-      <input type="submit" value="Reset">
+      <input type="reset" value="Reset">
 
       <script>
         let emailTextbox = document.getElementById("email address");
         let email= emailTextbox.value;
        emailTextbox.value = "@uclan.ac.uk"
+
+        let usernameTextbox = document.getElementById("student id");
+        let username = usernameTextbox.value;
+        usernameTextbox.value = "G"
       </script>
     </form>
-
-
+</div>
 </body>
 </html>
