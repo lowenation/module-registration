@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="body">
+    <div>
+        <h1>Module Registration Form </h1>
+    </div>
+
+
+    <form>
+        <div class="student-info-container">
+            <div class="module-info-box">
+                <p class="info-color">First name:</p>
+                <p><input id="first name" type="text" name="firstname" required autofocus class="input-box"></p>
+                <p class="info-color">Last name:</p>
+                <p><input id="Last name" type="text" name="lastname" required autofocus class="input-box"></p>
+                <p class="info-color">Student ID:</p>
+                <p><input id="student id" type="text" name="student id" required autofocus class="input-box"></p>
+                <p class="info-color">Email address:</p>
+                <p><input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required
+                          autofocus class="input-box" style="text-align:right "></p>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <div style="text-align: center"> <b>Register to modules</b> </div>
+            <br>
+            <div class="course-choice-box">
+                <div> <input id="CO1111" type="checkbox" name="checkbox" required> C01111 - The Computing Challenges </div>
+                <div> <input id="C01301" type="checkbox" name="checkbox" required> C01301 - Games Concept </div>
+                <div> <input id="CO1507" type="checkbox" name="checkbox" required> 1507 - Introduction to Networking </div>
+                <div> <input id="CO1605" type="checkbox" name="checkbox" required> CO1605 - Systems Analysis and Database
+                    Design </div>
+                <div> <input id="CO1508" type="checkbox" name="checkbox" required> CO1508 - Computer Systems and Security</div>
+                <div> <input id="CO1706" type="checkbox" name="checkbox" required> CO1706 - Interactive Application </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="pathway-header"><b>Preferred pathway</b></p>
+        </div>
+        <div class="pathway">
+            <input id="Software Engineering" type="radio" name="radiobutton" required> Software Engineering
+            <input id="Games Development" type="radio" name="radiobutton" required> Games Development
+            <input id="Networking" type="radio" name="radiobutton" required> Networking
+            <input id="Not Sure yet" type="radio" name="radiobutton" required> Not sure yet
+        </div>
+
+        <p></p>
+        <div class="gender-submit-reset-box" >
+            <div class="gender-input-box">
+                <b class="gender-header">Gender: </b>
+                <input list="genders" placeholder="select" required class="genders">
+                <datalist id="genders">
+                    <option value="Male">
+                    <option value="Female">
+                    <option value="Other">
+                </datalist>
+            </div>
+
+            <div class="submit-reset-box">
+                <p class="submit-reset-text"><b>Press 'submit' to submit your form or 'rest' to reset it</b></p>
+                <div class="submit-reset-button">
+                    <input class="submit-button" type="submit" value="Submit">
+                    <input class="reset-button" type="reset" value="Reset">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            let emailTextbox = document.getElementById("email address");
+            let email= emailTextbox.value;
+            emailTextbox.value = "@uclan.ac.uk"
+
+            let studentIDTextbox = document.getElementById("student id");
+            let studentID = studentIDTextbox.value;
+            studentIDTextbox.value = "G"
+        </script>
+    </form>
+    <p></p>
+    <a href="index.html">
+        <button class="css-button"> Turn off CSS</button>
+    </a>
+</div>
+</body>
+</html>

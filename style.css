@@ -1,0 +1,114 @@
+.body {
+   width: 100%;
+    background-color: #ffffff4d !important;
+}
+.body h1{
+    width: 100%;
+    background-color: #6d46db !important;
+    font: bold 25px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+.student{
+    font: bold 20px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.input-box{
+    width: 300px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #8F8D8D;
+    border-radius: 8px;
+    font-size: 16px;
+
+}
+.student-info-container{
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.info-color{
+    color: #08020D;
+    text-align: left;
+    margin-bottom: -20px;
+}
+
+.module-info-box{
+    background-color: #EFECF5;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.course-choice-box{
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #EFECF5;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+div > div > b{
+    font: bold 25px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #6d46db;
+}
+.pathway-header{
+    font: bold 25px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #6d46db;
+
+}
+.pathway {
+    background-color: #EFECF5;
+    color: black;
+    text-align: center;
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.genders{
+    width: 100px;
+    padding: 10px 20px;
+    border: 1px solid #8F8D8D;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.gender-header{
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+.gender-submit-reset-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+.gender-input-box{
+    display: flex;
+    align-items: center;
+}
+.submit-reset-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.submit-reset-text{
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 0.5rem;
+}
+.css-button, .submit-button, .reset-button{
+    font: bold 15px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #6d46db;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}

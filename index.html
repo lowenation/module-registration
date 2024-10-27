@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Module Registration Form</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="body">
@@ -11,18 +10,17 @@
         <h1>Module Registration Form </h1>
     </div>
 
-
     <form>
-        <div class="student info">
-      <p>First name:</p>
-      <p> <input id="first name" type="text" name="firstname" required autofocus class="input-box"></p>
-      <p>Last name:</p>
-      <p> <input id="Last name" type="text" name="lastname" required autofocus class="input-box"></p>
-      <p>Student ID:</p>
-      <p> <input id="student id" type="text" name="student id" required autofocus class="input-box"></p>
-      <p>Email address:</p>
-      <p> <input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required autofocus
-                 class="input-box"></p>
+        <div class="student-info">
+            <p class="info-color">First name:
+            <input id="first name" type="text" name="firstname" required autofocus class="input-box"></p>
+            <p class="info-color">Last name:
+            <input id="Last name" type="text" name="lastname" required autofocus class="input-box"></p>
+            <p class="info-color">Student ID:
+            <input id="student id" type="text" name="student id" required autofocus class="input-box"></p>
+            <p class="info-color">Email address:
+            <input id="email address" type="email" name="email address" title="example@uclan.ac.uk" required
+                   autofocus class="input-box"></p>
         </div>
 
       <p> <b>Register to modules</b> </p>
@@ -60,11 +58,14 @@
         let email= emailTextbox.value;
        emailTextbox.value = "@uclan.ac.uk"
 
-        let usernameTextbox = document.getElementById("student id");
-        let username = usernameTextbox.value;
-        usernameTextbox.value = "G"
+        let studentIDTextbox = document.getElementById("student id");
+        let studentID = studentIDTextbox.value;
+        studentIDTextbox.value = "G"
       </script>
     </form>
+    <p></p>
+    <a href="RegisterModule.html"> Turn On CSS</a>
+
 </div>
 </body>
 </html>
